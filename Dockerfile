@@ -43,6 +43,7 @@ apt-get install -y --no-install-recommends \
         dpkg-cross \
         gcc-12-riscv64-linux-gnu \
         g++-12-riscv64-linux-gnu
+apt-get install -y libatomic1
 
 for tool in cpp g++ gcc gcc-ar gcc-nm gcc-ranlib gcov gcov-dump gcov-tool; do
     update-alternatives --install /usr/bin/riscv64-linux-gnu-$tool riscv64-linux-gnu-$tool /usr/bin/riscv64-linux-gnu-$tool-12 12
